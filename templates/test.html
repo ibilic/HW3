@@ -1,0 +1,11 @@
+{% extends "index.html" %}
+{% block title %}See Form Results{% endblock %}
+{% block head %}
+  {{ super() }}
+{% endblock %}
+{% block content %}
+  <h1>Results for this submission</h1>
+  <p> Username: <strong>{{ name }}</strong>. </p>
+  <p>Tweet: {{ text }}</p>
+  <p>Display Name:  {{ display }} members at a time.</p>
+{% endblock %}

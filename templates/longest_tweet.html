@@ -1,0 +1,15 @@
+{% extends 'base.html' %}
+
+{% block content %}
+Tweet: {{tupInfo[0]}} <br>
+Username: {{tupInfo[1]}} <br>
+Display Name: {{tupInfo[2]}} <br>
+
+
+<div>
+{% for message in get_flashed_messages() %}
+    <strong>*** {{ message }} ***</strong>
+{% endfor %}
+</div>
+
+{% endblock %}
